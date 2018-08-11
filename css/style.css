@@ -1,3 +1,109 @@
+
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/raleway-extralight-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../fonts/raleway-thin-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
 
     padding: 0;
@@ -6,19 +112,940 @@
 
 }
 
+h1{
+    font-family: raleway, arial, sans-serif;
+    font-size: 64px;
+
+}
+
+h2{
+    font-family: raleway, arial, sans-serif;
+    font-size: 25px;
+
+}
+
+h3{
+    font-family: raleway, arial, sans-serif;
+    font-size: 33px;
+
+}
+
+h4{
+    font-family: raleway, arial, sans-serif;
+    font-size: 20px;
+
+}
+
 a{
 
     text-decoration: none;
+}
+
+p{
+    font-family: raleway, arial,sans-serif;
+    font-size: 20px;
+
+}
+
+li{
+    list-style: none;
 }
 
 nav{
 
     width: 100%;
     background-color: black;
+    font-family: raleway, arial, sans-serif;
+    font-weight: bold;
+    height:65px;
+    font-size: 23px;
+    letter-spacing: 0.05em;
 }
+
+
+
+.logo{
+    display: block;
+    color: white;
+    float: left;
+    padding-top: 20px;
+    padding-left: 3px;
+}
+
+.logo:hover a{
+
+    animation: color .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color{
+
+    0%{color:white}
+    100%{color: #2dba9e}
+
+}
+
+.logo span{
+
+   color: #2dba9e;
+}
+
+.logo a, .navList a{
+    color:white;
+}
+
+.navList{
+    display: block;
+    float:right;
+}
+
+.navList li{
+    text-decoration: none;
+    float:right;
+    padding-top:20px;
+    padding-left: 70px;
+}
+
+.navList li:hover a{
+    animation: color .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+.navList li:last-child{
+    position: relative;
+}
+
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 83px;
+    left: 42px;
+    width: 196px;
+    height: 151px;
+    background-color: black;
+    z-index: 1;
+    color: white;
+    padding-top: 12px;
+}
+
+.dropdown:before{
+
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    top: -10px;
+    left: 78px;
+}
+
+
+
+.dropdown li{
+
+    padding:9px ;
+}
+
+
+.dropdown li a{
+
+    padding:10px ;
+}
+
+.navList li:last-child:hover .dropdown{
+
+    display:block;
+}
+
 
 .mainWidth{
 
-    width: 1600px;
+    width: 1700px;
     margin: 0 auto;
 }
+
+header {
+    position: relative;
+   /* height: 500px;*/
+    width:100%;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+
+#slider {
+
+
+    height: 806px;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+
+
+
+#slider .headerImage {
+
+    margin-top: 48px;
+    margin-left: 52px;
+
+    width: 30%;
+    height: 806px;
+    background-image: url(../images/black_chair.png);
+    background-size: 183%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slider .headerBox {
+
+    padding-top: 217px;
+    padding-bottom:30px;
+
+    width: 53%;
+    height: 806px;
+    text-align: center;
+
+}
+
+#slider .headerBox p{
+
+    padding-top: 46px;
+    padding-left: 86px;
+    padding-right: 124px;
+    padding-bottom: 30px;
+    line-height: 33px;
+}
+
+.headerBox span {
+    font-family: ralewaybold, arial, sans-serif;
+    color: #2dba9e;
+}
+
+#slider .headerBox a{
+    padding:13px;
+    padding-left: 50px;
+    padding-right:50px;
+    width: 290px;
+    height: 100px;
+    color: white;
+    font-family: raleway, arial, sans-serif;
+    font-size: 40px;
+    background-color: #2dba9e;
+    border: 5px solid #2dba9e;
+    border-radius: 13px;
+}
+
+#slider .headerBox a:hover{
+
+    animation: hover .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+
+    0%{
+    background-color: #2dba9e;
+    border: 5px solid #2dba9e;
+    padding-left: 50px;
+    padding-right:50px;}
+
+    /*
+    50%{
+        background-color: #a7ba64;
+        border: 5px solid #a7ba64;
+    }
+    */
+
+    100% {
+    background-color: #fcaf59;
+    border: 5px solid  #fcaf59;
+    padding-left: 80px;
+    padding-right:80px;}
+}
+
+#slider .prev, #slider .next {
+
+    padding-top: 339px;
+    width: 4%;
+    top: 330px;
+    left: 113px;
+    content: '<';
+    font-family: ralewayregular;
+    font-size: 118px;
+    cursor: pointer;
+    color: #2dba9e;
+}
+
+#slider .prev:hover, #slider .next:hover{
+
+    animation: pulse .5s infinite alternate ease-out;
+
+}
+
+@keyframes pulse {
+
+    0%{
+        color: #2dba9e;
+        transform: scale(1,1);
+    }
+    100%{
+        color: #fcaf59;
+        transform: scale(1.1,1.1);
+    }
+}
+
+.images {
+
+    height: 560px;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    margin-top: 45px;
+    width: 31%;
+    height: 361px;
+}
+
+.textbox{
+    margin-top: 45px;
+    width: 32%;
+    height: 405px;
+    border: 2px solid lightgrey;
+
+}
+
+.pic1 {
+
+    background-image: url(../images/box1_img.jpg);
+    background-size: cover;
+}
+
+.pic2 {
+
+    background-image: url(../images/box2_img.jpg);
+    background-size: cover;
+}
+
+.label1 {
+    margin-top:238px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+
+.label1 h2 {
+    padding-top: 22px;
+    padding-left: 26px;
+    position: relative;
+}
+
+.label1 h2:before{
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    width: 223px;
+    height: 10px;
+    background-color: #2dba9e;
+
+}
+
+.label1:hover h2:before{
+
+    animation: grow 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes grow {
+
+    0%{
+        background-color: #2dba9e;
+        width: 233px;
+    }
+    100%{
+        background-color: #fcaf59;
+        width: 480px;
+    }
+}
+
+.textbox h2 {
+
+    padding-left: 35px;
+    padding-top: 42px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.textbox h2:before{
+
+    content: '';
+    position: absolute;
+    top: 76px;
+    left: 35px;
+    width: 223px;
+    height: 10px;
+    background-color: #2dba9e;
+}
+
+.textbox:hover h2:before{
+    animation: grow 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+.textbox p{
+
+    padding-left: 35px;
+    padding-right: 46px;
+    padding-top: 42px;
+    color: grey;
+}
+
+.pricelist {
+
+    background-color: #f1f1f1;;
+    width:100%;
+    position: relative;
+
+}
+
+.pricelist:before {
+
+    position: absolute;
+    content: "CENNIK";
+    font-family: raleway, arial, sans-serif;
+    font-size: 35px;
+    top: 69px;
+    left: 106px;
+    width: 511px;
+    height: 51px;
+    border-bottom: 13px solid #2dba9e;
+}
+
+.priceContainer {
+
+    height: 1142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceBox {
+
+    margin-top: 253px;
+    width: 31%;
+    height: 800px;
+    border: 3px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+.priceBox:after{
+    content: 'DOŁĄCZ';
+    width: 200px;
+    height: 41px;
+    position: absolute;
+    bottom: 35px;
+    left: 165px;
+    background-color: #2dba9e;
+    border-radius: 10px;
+    color: white;
+    font-family: raleway,arial,sans-serif;
+    font-size: 26px;
+    padding-top: 16px;
+    text-align: center;
+
+}
+
+.priceBox:hover:after{
+
+    animation: grow2 .5s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes grow2 {
+
+    0%{
+
+        transform: scale(1,1);
+    }
+
+    100%{
+        background-color: #fcaf59;
+        transform: scale(1.1,1.1);
+    }
+
+}
+
+.decorCircleBig{
+    position: absolute;
+    top: -65px;
+    left: 215px;
+    border-radius: 100%;
+    border: 3px solid lightgrey;
+    width: 95px;
+    height: 95px;
+    background-color: white;
+}
+
+.decorCircleSmall{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    border-radius: 100%;
+    border: 3px solid lightgrey;
+    width: 45px;
+    height: 45px;
+    background-color: lightgrey;
+}
+
+.textContainer{
+
+    height: 50%;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.listContainer{
+
+    height: 50%;
+    background-color: #f9f9f9;
+}
+
+.textContainer .circle {
+
+    width: 208px;
+    height: 208px;
+    border: 3px solid lightgrey;
+    border-radius: 100%;
+    position: absolute;
+    top: 125px;
+    left: 158px;
+    background-color: white;
+}
+
+.textContainer h4 {
+    padding-left: 57px;
+    padding-top: 48px;
+/*    text-align: center; */
+    color: lightgrey;
+    font-size: 65px;
+    position: relative;
+
+
+}
+
+.textContainer.textRight h4 {
+
+    padding-left:45px;
+
+}
+
+.textContainer h4 span {
+
+    font-size: 28px;
+    position: absolute;
+    top: 44px;
+    right: 34px;
+
+}
+
+.textContainer h3 {
+    padding-top: 45px;
+    text-align: center;
+    color: #2dba9e;
+    font-size: 34px;
+
+}
+
+.textContainer p {
+    padding-top: 8px;
+    text-align: center;
+    color: lightgrey;
+    font-size: 25px;
+
+}
+
+.list li {
+
+    text-align: center;
+    height: 71px;
+
+    padding: 13px
+}
+
+.list li h3{
+
+    font-family: raleway,arial,sans-serif;
+    font-weight: 400;
+}
+
+.list li:nth-child(2n){
+
+    color: #8b8b8b;
+    background-color: #f2f2f2;
+
+}
+
+.list li:nth-child(2n+1){
+
+    color: #959595;
+    background-color: #e8e8e8;
+}
+
+.priceBox.middleBox {
+
+    margin-top: 253px;
+    width: 31%;
+    height: 800px;
+    border: 3px solid #2dba9e;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.priceBox.middleBox:after{
+    content: 'DOŁĄCZ';
+    width: 200px;
+    height: 41px;
+    position: absolute;
+    bottom: 35px;
+    left: 165px;
+    background-color: white;
+    border-radius: 10px;
+    color: #2dba9e;
+    font-family: raleway,arial,sans-serif;
+    font-size: 26px;
+    padding-top: 16px;
+    text-align: center;
+
+}
+
+.decorCircleBig.middleBox{
+    position: absolute;
+    top: -65px;
+    left: 215px;
+    border-radius: 100%;
+    border: 3px solid #2dba9e;
+    width: 95px;
+    height: 95px;
+    background-color: #2dba9e;
+}
+
+.decorCircleSmall.middleBox{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    border-radius: 100%;
+    border: 3px solid white;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+}
+
+.textContainer.middleBox{
+
+    height: 50%;
+    background-color: #2dba9e;
+    position: relative;
+}
+
+.listContainer.middleBox{
+
+    height: 50%;
+    background-color: #2dba9e;
+}
+
+.textContainer .circle.middleBox {
+
+    width: 208px;
+    height: 208px;
+    border: 3px solid #2dba9e;
+    border-radius: 100%;
+    position: absolute;
+    top: 125px;
+    left: 158px;
+    background-color: white;
+}
+
+.textContainer.middleBox h3 {
+
+    color: white;
+}
+
+.textContainer.middleBox p, h4{
+
+    color: #2dba9e;
+}
+
+.textContainer.middleBox h4{
+
+    color: #2dba9e;
+}
+
+.contact{
+position: relative;
+}
+
+.formContainer{
+
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form {
+
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top:194px;
+}
+
+.form input {
+    padding: 21px;
+    margin: 8px;
+    margin-left: -19px;
+    margin-bottom: 32px;
+    height: 107px;
+    border: 1px solid #2dba9e;
+    font-size: 52px;
+    font-family: raleway,arial,sans-serif;
+    font-weight: lighter;
+
+}
+
+.form input:last-child{
+
+    height: 302px;
+    line-height: 30px;
+    position:relative;
+}
+
+.form input:last-child::placeholder{
+
+
+    position:absolute;
+
+}
+
+.checkContainer{
+
+    width: 36%;
+}
+
+.contact:before {
+
+    position: absolute;
+    content: "KONTAKT";
+    font-family: ralewayregular, arial, sans-serif;
+    font-size: 35px;
+    top: 68px;
+    left: 13px;
+    width: 511px;
+    height: 51px;
+    border-bottom: 13px solid #2dba9e;
+}
+
+.checkContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotelImg{
+
+    background-image: url(../images/red_chair.png);
+    height: 38%;
+    width: 70%;
+    margin-top: 153px;
+    margin-left: -75px;
+    background-size: cover
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputBox h3{
+
+    height: 30%;
+    margin-top: 59px;
+    font-family: raleway,arial,sans-serif;
+    font-weight: lighter;
+    font-size: 29px;
+    margin-left: 127px;
+    color: #bebebe;
+}
+
+.inputBox input{
+
+    position: absolute;
+    top: 51px;
+    left: 30px;
+}
+
+.inputBox input:before {
+
+    content: '';
+    display: inline-block;
+    width: 72px;
+    height: 76px;
+    border: 1px solid #2dba9e;
+    background-color: white;
+
+}
+
+.inputBox input:checked:before {
+
+    background-image: url("../images/form_ok.jpg");
+    background-repeat: no-repeat;
+    background-size: 94%;
+    background-position-y: 10px;
+
+}
+
+
+
+
+.inputBox a{
+    position: absolute;
+    top: 190px;
+    left: 28px;
+    padding: 18px;
+    padding-left: 155px;
+    width: 549px;
+    height: 113px;
+    color: white;
+    font-family: raleway, arial, sans-serif;
+    font-weight: bold;
+    font-size: 58px;
+    background-color: #2dba9e;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.inputBox a:hover{
+
+    animation: grow2 .5s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+footer{
+
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    height: 130px;
+    padding-top:33px;
+
+}
+
+footer  p{
+    width: 77%;
+    margin-top: 21px;
+    font-size: 29px;
+
+}
+
+footer .icons{
+
+    width: 40%;
+    height: 100px;
+}
+
+footer .icons p{
+
+    float:left;
+}
+footer .icons p span{
+
+    font-family: ralewaybold, arial, sans-serif;
+}
+
+.vimeo{
+    float:left;
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/vimeo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+
+}
+
+.vimeo, .flikr, .pinterest, .twitter:hover{
+    cursor: pointer;
+}
+
+.flikr{
+    float:left;
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/flickr.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.pinterest{
+    float:left;
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/pinterest.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+}
+
+
+.twitter{
+    float:left;
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/twitter.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+}
+
+footer .icons p{
+    width: 38%;
+    margin-left: 114px;
+
+
+
+
+}
+
